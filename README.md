@@ -6,6 +6,7 @@
 **Request Body Format**:
 ```json
 {
+   // Status Code: 200
   "orderNumber": "order-number"
 }
 ```
@@ -13,6 +14,7 @@
 **Request Body Error Format**:
 ```json
 {
+   // Status Code: 400
   "requestError": "Order number is required"
 }
 ```
@@ -34,9 +36,11 @@
 **Response Body Error Format**:
 ```json
 {
+   // Status Code: 500
   "responseError": "Error in Upstream API request"
 }
 ```
+
 
 **Setting up Environment Variables**:
 1. Create a .env file in the project's config directory.
