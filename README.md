@@ -6,20 +6,20 @@
 **Request Body Format**:
 ```json
 {
-   // Status Code: 200
   "orderNumber": "order-number"
 }
 ```
 
 **Request Body Error Format**:
+Status Code: 400
 ```json
 {
-   // Status Code: 400
   "requestError": "Order number is required"
 }
 ```
 
 **Response Body Success Format**:
+Status Code: 200
 ```json
 {
   "Tracking Number": "...",
@@ -34,9 +34,9 @@
 ```
 
 **Response Body Error Format**:
+Status Code: 500
 ```json
 {
-   // Status Code: 500
   "responseError": "Error in Upstream API request"
 }
 ```

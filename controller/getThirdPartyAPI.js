@@ -21,12 +21,10 @@ export const getThirdPartyAPI = async (orderNumber) => {
             headers: {
                 "Content-Type": "application/json",
                 "X-locale": "en_US",
-                // "Authorization": `Bearer ${process.env.TOKEN}`,
+                "Authorization": `Bearer ${process.env.TOKEN}`,
             }
         };
-
         const response = await axios.post(url, data, config);
-        console.log(response?.data.output)
         return response?.data.output
     } catch (error) {
         console.log(err)
