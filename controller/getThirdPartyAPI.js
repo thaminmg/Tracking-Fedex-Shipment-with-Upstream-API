@@ -4,7 +4,7 @@ export const getThirdPartyAPI = async (orderNumber) => {
     try {
 
         // Requirement 4
-        const url = "https://apis-sandbox.fedex.com/track/v1/trackingnumbers/";
+        const url = "https://apis-sandbox.fedex.com/track/v1/trackingnumbers";
         const input = {
             trackingInfo: [
                 {
